@@ -1,7 +1,6 @@
 <!-- https://github.com/Zeronetsec/TwrapKit -->
 
 # DISCLAIMER
----
 
 ## Termux:API Wrapper
 **TwrapKit** is an interface built to interact with the **Termux:API** toolset. <br>
