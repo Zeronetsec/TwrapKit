@@ -6,8 +6,8 @@
 [![license](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 # TwrapKit
-TwrapKit is a lightweight CLI wrapper for Termux:API, designed to simplify mobile automation and Android hardware interaction. <br>
-It abstracts complex Termux:API commands into an intuitive interface, providing faster access to Android system features and sensors.
+TwrapKit is a CLI wrapper for Termux:API designed for mobile automation. <br>
+It provides simplified access to Android system features and sensors.
 
 ## Features
 - Inspect system, battery, and hardware capabilities
