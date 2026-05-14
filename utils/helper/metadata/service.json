@@ -1,0 +1,5 @@
+{
+    "Command": "--service",
+    "Args": "<start|stop>",
+    "Description": "manage tool background services"
+}

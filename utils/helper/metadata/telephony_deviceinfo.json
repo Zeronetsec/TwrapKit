@@ -1,0 +1,5 @@
+{
+    "Command": "--telephony-deviceinfo",
+    "Args": "",
+    "Description": "show cellular hardware and carrier details"
+}

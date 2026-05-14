@@ -1,0 +1,5 @@
+{
+	"Command": "--camera-info",
+	"Args": "",
+	"Description": "show camera hardware and sensor capabilities"
+}

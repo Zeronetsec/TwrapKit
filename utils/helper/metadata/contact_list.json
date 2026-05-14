@@ -1,0 +1,5 @@
+{
+	"Command": "--contact-list",
+	"Args": "",
+	"Description": "show stored contacts and phone numbers"
+}

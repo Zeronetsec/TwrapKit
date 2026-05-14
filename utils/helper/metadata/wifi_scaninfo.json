@@ -1,0 +1,5 @@
+{
+    "Command": "--wifi-scaninfo",
+    "Args": "",
+    "Description": "show network interface and connection details"
+}

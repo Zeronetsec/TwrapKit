@@ -1,0 +1,5 @@
+{
+    "Command": "--battery-status",
+    "Args": "",
+    "Description": "show battery metrics and power state"
+}

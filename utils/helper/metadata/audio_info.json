@@ -1,0 +1,5 @@
+{
+    "Command": "--audio-info",
+    "Args": "",
+    "Description": "show audio hardware and stream status"
+}

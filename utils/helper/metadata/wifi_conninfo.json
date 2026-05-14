@@ -1,0 +1,5 @@
+{
+    "Command": "--wifi-conninfo",
+    "Args": "",
+    "Description": "show active network connection and ip details"
+}
