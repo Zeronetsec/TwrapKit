@@ -9,7 +9,7 @@ DG='\033[1;90m'
 
 base="${PREFIX}/opt"
 symlink="${PREFIX}/bin"
-bkdate="$(command date +%Y_%b_%d_%H_%M_%S)"
+bkdate="$(command date '+%Y_%b_%d_%H_%M_%S')"
 
 path="$(
     cd -- "$(
@@ -30,35 +30,23 @@ function install() {
     echo -e "    ${DG}└── ${N}exit: ${GG}${status}${N}"
 }
 
-function getinstall() {
-    if command -v apt >/dev/null 2>&1; then
-        installw="command apt install -y"
-    elif command -v apk >/dev/null 2>&1; then
-        installw="command apk add"
-    elif command -v pacman >/dev/null 2>&1; then
-        installw="command pacman -S --noconfirm"
-    else
-        exit 1
-    fi
-
-    echo -e "${1}" | while IFS= read -r line; do
-        [[ -z "${line}" ]] && continue
-        IFS="::" read -ra pkgs <<< "${line}"
-        for pkg in "${pkgs[@]}"; do
-            pkg="$(echo -e "${pkg}" | command xargs)"
-            if eval "${installw} ${pkg}" 2>/dev/null; then
-                break
-            fi
-        done
-    done
-}
-
 if [[ ! -d "${path}" ]]; then
-    echo -e "\n${R}[!] ${N}Folder: ${GG}${path} ${N}not found! \n"
+    echo -e "${R}[!] ${N}Folder: ${GG}${path} ${N}not found! \n"
     exit 1
 fi
 
-echo -e "\n${B}[*] ${N}Installing: ${GG}TwrapKit${N}"
+termux_api="$(
+    command am start -n \
+        'com.termux.api/invalid.activity' \
+        2>&1
+)"
+
+if [[ "${termux_api}" != *"Error: Activity class"* ]] && [[ "${termux_api}" != *"does not exist"* ]]; then
+    echo -e "${R}[!] ${N}Termux:API not installed!"
+    exit 1
+fi
+
+echo -e "${B}[*] ${N}Installing: ${GG}TwrapKit${N}"
 
 pack=(
     "termux-api"
@@ -68,7 +56,7 @@ pack=(
 
 for i in "${pack[@]}"; do
     install \
-        "getinstall ${i}" \
+        "command apt install -y ${i}" \
         "Installing: ${GG}${i}${N}"
 done
 
@@ -115,11 +103,9 @@ printf '\n'
 if command -v twrapkit &>/dev/null; then
     echo -e "${GG}[+] ${N}TwrapKit installed!"
     echo -e "${GG}[+] ${N}Usage: ${GG}twrapkit --help ${N}to show helper"
-    printf '\n'
     exit 0
 else
     echo -e "${R}[!] ${N}Failed installing twrapkit!"
-    printf '\n'
     exit 1
 fi
 
