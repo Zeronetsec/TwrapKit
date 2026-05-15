@@ -1,7 +1,6 @@
 <!-- https://github.com/Zeronetsec/TwrapKit -->
 
 [![version](https://img.shields.io/badge/TwrapKit-Version%200.1-blue.svg?maxAge=259200)]()
-[![gover](https://img.shields.io/badge/Go-Version%201.26.1-blue.svg)]()
 [![os](https://img.shields.io/badge/Supported%20OS-Android-blue.svg)]()
 [![license](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
