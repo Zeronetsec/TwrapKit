@@ -20,17 +20,15 @@ It provides simplified access to Android system features and sensors.
 This tool interacts with the Android API via Termux:API. <br>
 Please read the
 [DISCLAIMER](https://github.com/Zeronetsec/TwrapKit/blob/main/DISCLAIMER.md)
-before use.
+before use. <br>
+Use at your own risk.
 
 ## Installation
 ```bash
 git clone https://github.com/Zeronetsec/TwrapKit.git
 cd TwrapKit
 chmod +x install.sh
-./install.sh
-
-# for backup
-./install.sh --backup
+./install.sh # --backup
 ```
 
 ## Usage
