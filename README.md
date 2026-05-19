@@ -44,6 +44,6 @@ twrapkit --contact-list
 And more commands.
 
 ## License
-This project is licensed under the MIT License. <br>
+This project is licensed under the MIT License.
 
 <!-- Copyright (c) 2026 Zeronetsec -->
