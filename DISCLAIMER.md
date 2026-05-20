@@ -14,7 +14,7 @@ It simplifies command execution but depends entirely on the underlying Termux:AP
 Installing the **termux-api** package alone is not sufficient for full functionality. <br>
 You must also install the **Termux:API Android App** on your device. <br>
 Without the Android application, TwrapKit cannot communicate with Android system features. <br>
-Download from the official F-Droid repository: [https://f-droid.org/id/packages/com.termux.api/](https://f-droid.org/id/packages/com.termux.api/)
+Download from the official F-Droid repository: [f-droid.org/id/packages/com.termux.api/](https://f-droid.org/id/packages/com.termux.api/)
 
 ## Permissions & Access
 Termux:API requires access to Android system features via user-granted permissions. <br>
