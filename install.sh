@@ -73,7 +73,7 @@ pack=(
 for i in "${pack[@]}"; do
     install \
         "command apt install -y ${i}" \
-        "Installing: ${GG}${i}${N}"
+        "Installing: ${GG}${i}${N}" 2>/dev/null
 done
 
 if [[ ! -d "${base}" ]]; then
