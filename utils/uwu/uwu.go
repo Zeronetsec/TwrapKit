@@ -28,7 +28,7 @@ func Uwu(duration time.Duration) {
                 fmt.Print("\033[K")
                 return
             default:
-                fmt.Print(
+                fmt.Printf(
                     "\r%s\033[K",
                     faces[kaomoji%len(faces)],
                 )

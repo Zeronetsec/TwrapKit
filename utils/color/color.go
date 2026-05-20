@@ -9,6 +9,7 @@ const (
     GG = "\033[0;32m"
     CC = "\033[0;36m"
     DG = "\033[1;90m"
+    WW = "\033[0;37m"
 )
 
 // Copyright (c) 2026 Zeronetsec

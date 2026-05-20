@@ -56,8 +56,8 @@ func ShowHelper() {
         }
 
         fmt.Printf(
-            "    %s* %s%s%s%s %s- %s%s\n",
-            color.DG, color.GG, hp.Command, color.CC, args, color.DG, color.N, hp.Description,
+            "    %s* %s%s%s%s %s- %s%s%s\n",
+            color.DG, color.GG, hp.Command, color.CC, args, color.DG, color.WW, hp.Description, color.N,
         )
     }
 }
