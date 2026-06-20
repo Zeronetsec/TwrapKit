@@ -9,6 +9,8 @@ function install::androidCheck() {
         return 1
     }
 
+    echo -e "${B}[*] ${N}Checking android environment..."
+
     local termux_api="$(
         command am start -n \
             'com.termux.api/invalid.activity' \
