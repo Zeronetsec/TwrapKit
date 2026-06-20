@@ -5,7 +5,7 @@ package wifiscaninfo
 import (
     "fmt"
     "encoding/json"
-    "twrapkit/utils/color"
+    "github.com/Zeronetsec/TwrapKit/utils/color"
 )
 
 func handleError(data string) {

@@ -5,8 +5,8 @@ package wificonninfo
 import (
     "fmt"
     "encoding/json"
-    "twrapkit/utils/shell"
-    "twrapkit/utils/color"
+    "github.com/Zeronetsec/TwrapKit/utils/shell"
+    "github.com/Zeronetsec/TwrapKit/utils/color"
 )
 
 func WFConn() {

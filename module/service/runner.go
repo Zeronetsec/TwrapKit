@@ -4,8 +4,8 @@ package service
 
 import (
     "fmt"
-    "twrapkit/utils/shell"
-    "twrapkit/utils/color"
+    "github.com/Zeronetsec/TwrapKit/utils/shell"
+    "github.com/Zeronetsec/TwrapKit/utils/color"
 )
 
 func Runner(action string) {

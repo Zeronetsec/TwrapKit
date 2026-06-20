@@ -5,7 +5,7 @@ package birthday
 import (
     "fmt"
     "time"
-    "twrapkit/utils/color"
+    "github.com/Zeronetsec/TwrapKit/utils/color"
 )
 
 func ShowBirthDay() {

@@ -5,7 +5,7 @@ package main
 import (
     "os"
     "strings"
-    "twrapkit/console"
+    "github.com/Zeronetsec/TwrapKit/console"
 )
 
 func main() {

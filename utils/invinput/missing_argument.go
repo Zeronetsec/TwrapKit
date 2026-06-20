@@ -1,0 +1,22 @@
+// https://github.com/Zeronetsec/TwrapKit
+
+package invinput
+
+import (
+    "fmt"
+    "github.com/Zeronetsec/TwrapKit/utils/color"
+)
+
+func MissingArgument() {
+    fmt.Printf(
+        "%s[!] %sMissing argument!\n",
+        color.R, color.N,
+    )
+
+    fmt.Printf(
+        "%s[!] %sTry: %stwrapkit --help%s\n",
+        color.R, color.N, color.GG, color.N,
+    )
+}
+
+// Copyright (c) 2026 Zeronetsec

@@ -4,7 +4,7 @@ package contactlist
 
 import (
     "fmt"
-    "twrapkit/utils/color"
+    "github.com/Zeronetsec/TwrapKit/utils/color"
 )
 
 func inprint(list []Contact) {

@@ -7,25 +7,26 @@ import (
     "fmt"
     "encoding/json"
     "io/fs"
-    "twrapkit/utils/color"
-    "twrapkit/utils/birthday"
+    "github.com/Zeronetsec/TwrapKit/utils/color"
+    "github.com/Zeronetsec/TwrapKit/utils/birthday"
+    "github.com/Zeronetsec/TwrapKit/utils/banner"
 )
 
 //go:embed metadata/*
 var MetaFS embed.FS
 
 func ShowHelper() {
-    tname := "twrapkit"
+    banner.Show()
     birthday.ShowBirthDay()
 
     fmt.Printf(
-        "%sUsage: %s%s %s<command> [<args>]%s\n",
-        color.N, color.GG, tname, color.CC, color.N,
+        "%sUsage: %stwrapkit %s<command> [<args>]%s\n",
+        color.N, color.GG, color.CC, color.N,
     )
 
     fmt.Println()
     fmt.Printf(
-        "%sAvailable commands:\n",
+        "%sAvailable options:\n",
         color.N,
     )
 
@@ -56,8 +57,13 @@ func ShowHelper() {
         }
 
         fmt.Printf(
-            "    %s* %s%s%s%s %s- %s%s%s\n",
-            color.DG, color.GG, hp.Command, color.CC, args, color.DG, color.WW, hp.Description, color.N,
+            "    %s* %s%s%s%s%s\n",
+            color.DG, color.GG, hp.Command, color.CC, args, color.N,
+        )
+
+        fmt.Printf(
+            "    %s└── %s%s%s\n",
+            color.DG, color.WW, hp.Description, color.N,
         )
     }
 }

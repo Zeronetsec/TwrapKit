@@ -4,7 +4,7 @@ package version
 
 import (
     "fmt"
-    "twrapkit/utils/color"
+    "github.com/Zeronetsec/TwrapKit/utils/color"
 )
 
 const (

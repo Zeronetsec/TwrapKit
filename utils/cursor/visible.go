@@ -7,7 +7,7 @@ import (
 )
 
 func Visible() {
-    fmt.Print("\033[?25h")
+    fmt.Print("\x1b[?25h")
 }
 
 // Copyright (c) 2026 Zeronetsec

@@ -7,7 +7,7 @@ import (
 )
 
 func Hide() {
-    fmt.Print("\033[?25l")
+    fmt.Print("\x1b[?25l")
 }
 
 // Copyright (c) 2026 Zeronetsec

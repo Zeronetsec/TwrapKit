@@ -1,37 +1,35 @@
 <!-- https://github.com/Zeronetsec/TwrapKit -->
 
-[![version](https://img.shields.io/badge/TwrapKit-Version%200.1-blue.svg?maxAge=259200)]()
+[![version](https://img.shields.io/badge/TwrapKit-Version%200.1-blue.svg)]()
 [![os](https://img.shields.io/badge/Supported%20OS-Android-blue.svg)]()
 [![license](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 # TwrapKit
-TwrapKit is a CLI wrapper for Termux:API designed for mobile automation. <br>
-It provides simplified access to Android system features and sensors.
+TwrapKit is a Termux:API wrapper for Android system and hardware access.
 
 ## Features
-- Inspect system, battery, and hardware capabilities
-- Monitor network status and Wi-Fi connection details
-- Access telephony data, call logs, and contact lists
-- Manage background services and tool lifecycle
-- Retrieve camera and audio device information
-- And more.
+- Inspect system, battery, and hardware capabilities.
+- Monitor network status and Wi-Fi connection details.
+- Access telephony data, call logs, and contact lists.
+- Retrieve camera and audio device information.
+- And more features.
 
 ## Disclaimer
-This tool interacts with the Android API via Termux:API. <br>
-Please read the
-[DISCLAIMER](DISCLAIMER.md)
-before use. <br>
-Use at your own risk.
+Please read [.docs/disclaimer.md](.docs/disclaimer.md) before using this tool. </br>
+Use this software at your own risk. </br>
+The author is not responsible for any damage, data loss, or issues that may result from its use.
 
 ## Installation
+Quick install:
 ```bash
 git clone https://github.com/Zeronetsec/TwrapKit
 cd TwrapKit
 chmod +x install.sh
-./install.sh # --backup
+./install.sh
 ```
+For more detailed installation and uninstallation instructions, see [.docs/install_and_uninstall.md](.docs/install_and_uninstall.md).
 
-## Usage
+## Usage Example
 ``` bash
 twrapkit --service <start|stop>
 twrapkit --camera-info
