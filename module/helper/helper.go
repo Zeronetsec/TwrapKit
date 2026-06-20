@@ -20,7 +20,7 @@ func ShowHelper() {
     birthday.ShowBirthDay()
 
     fmt.Printf(
-        "%sUsage: %stwrapkit %s<command> [<args>]%s\n",
+        "%sUsage: %stwrapkit %s<option> [<args>]%s\n",
         color.N, color.GG, color.CC, color.N,
     )
 
