@@ -22,7 +22,7 @@ func inprint(scans []ScanItem) {
         }
 
         fmt.Printf(
-            "%sConnect: %s%d%s\n",
+            "%sWifi: %s%d%s\n",
             color.N, color.B, i+1, color.N,
         )
 
