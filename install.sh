@@ -30,12 +30,12 @@ include : '(
     .install/varlock
     .install/zinstall
     .install/zparser
-    .install/android_check
     .install/inpackages
     .install/prepdir
     .install/getinstall
     .install/installer
     .install/checker
+    .install/extern/android_check
     .install/fnclock
 )'
 
@@ -48,7 +48,7 @@ while [[ ${#} -gt 0 ]]; do
     shift
 done
 
-install::androidCheck
+install::extern::androidCheck
 install::inpackages
 install::prepdir
 install::installer
