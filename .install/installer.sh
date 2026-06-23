@@ -5,8 +5,8 @@ function install::installer() {
             install::getinstall \
                 "
                     command zip -r \
-                    twrapkit_${bkdate}.bak.zip \
-                    twrapkit
+                        twrapkit_${bkdate}.bak.zip \
+                        twrapkit
                 " \
                 "Backup: ${GG}${opt}/twrapkit ${DG}-> ${GG}${opt}/twrapkit_${bkdate}.bak.zip${N}"
             cd
@@ -38,8 +38,8 @@ function install::installer() {
     install::getinstall \
         "
             command ln -sf \
-            ${opt}/twrapkit/twrapkit \
-            ${bin}/twrapkit
+                ${opt}/twrapkit/twrapkit \
+                ${bin}/twrapkit
         " \
         "Symlink: ${GG}${opt}/twrapkit/twrapkit ${DG}-> ${GG}${bin}/twrapkit${N}"
 }
