@@ -1,5 +1,5 @@
 {
-	"Command": "--call-log",
-	"Args": "",
-	"Description": "show recent call history and timestamps"
+    "Command": "--call-log",
+    "Args": "",
+    "Description": "show recent call history and timestamps"
 }

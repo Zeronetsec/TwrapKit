@@ -1,0 +1,1 @@
+readonly -f install::extern::androidCheck
