@@ -54,4 +54,4 @@ function install::extern::androidCheck() {
         echo -e "${R}[!] ${N}Termux:API not installed!"
         return 1
     fi
-}
+}; readonly -f install::extern::androidCheck

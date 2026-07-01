@@ -42,4 +42,4 @@ function install::installer() {
                 ${bin}/twrapkit
         " \
         "Symlink: ${GG}${opt}/twrapkit/twrapkit ${DG}-> ${GG}${bin}/twrapkit${N}"
-}
+}; readonly -f install::installer

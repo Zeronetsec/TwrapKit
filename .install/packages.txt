@@ -1,4 +1,5 @@
 bash
+coreutils
 golang
 termux-api
 zip
