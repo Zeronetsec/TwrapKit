@@ -4,6 +4,7 @@ package console
 
 import (
     "time"
+    "fmt"
     "github.com/Zeronetsec/TwrapKit/module/uwu"
     "github.com/Zeronetsec/TwrapKit/utils/cursor"
 )
@@ -13,6 +14,8 @@ func (c UWU) Execute(args []string) {
     cursor.Hide()
     uwu.Uwu(5 * time.Second)
     cursor.Visible()
+
+    fmt.Println()
 }
 
 // Copyright (c) 2026 Zeronetsec
