@@ -1,8 +1,8 @@
 <!-- https://github.com/Zeronetsec/TwrapKit -->
 
-[![version](https://img.shields.io/badge/TwrapKit-Version%200.1-blue.svg)]()
-[![os](https://img.shields.io/badge/Supported%20OS-Android-blue.svg)]()
-[![license](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+<img src="https://img.shields.io/badge/TwrapKit-Version%200.1-blue.svg?style=square&logo=go" />
+<img src="https://img.shields.io/badge/Supported%20OS-Android-blue.svg?style=square&logo=android" />
+<img src="https://img.shields.io/badge/License-MIT-blue.svg?style&logo=github" />
 
 # TwrapKit
 TwrapKit is a Termux:API wrapper for Android system and hardware access.
