@@ -1,9 +1,9 @@
 <!-- https://github.com/Zeronetsec/TwrapKit -->
 
 <div align="center">
-    <img src="https://img.shields.io/badge/TwrapKit-Version%200.1-blue.svg?style=square&logo=go" />
-    <img src="https://img.shields.io/badge/Supported%20OS-Android-blue.svg?style=square&logo=android" />
-    <img src="https://img.shields.io/badge/License-MIT-blue.svg?style&logo=github" />
+    <img src="https://img.shields.io/badge/TwrapKit-Version%200.1-blue?style=square&logo=go&v=1" />
+    <img src="https://img.shields.io/badge/Supported%20OS-Android-blue?style=square&logo=android&v=1" />
+    <img src="https://img.shields.io/badge/License-MIT-blue?style&logo=github&v=1" />
 </div>
 
 # TwrapKit
