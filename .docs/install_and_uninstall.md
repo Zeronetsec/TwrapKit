@@ -3,22 +3,23 @@
 # Installation
 `install.sh` optional option:
 - `--backup`
+- └── create a backup of the existing source installation before replacing it.
 
-Use `--backup` to create a backup of the existing TwrapKit installation before replacing it.
-
-## Termux (only)
+### Usage
 ```bash
 git clone https://github.com/Zeronetsec/TwrapKit
-cd TwrapKit
-chmod +x install.sh
-./install.sh
+bash TwrapKit/install.sh <option>
 ```
 
-## Uninstallation
+# Uninstallation
+`uninstall.sh` optional option:
+- `--remove-backup`
+- └── remove all backup found.
+
+### Usage
 ```bash
 export prefix="${PREFIX:-/usr}"
-rm -f "${prefix}/bin/twrapkit"
-rm -rf "${prefix}/opt/twrapkit"
+bash $prefix/opt/twrapkit/uninstall.sh <option>
 ```
 
 <!-- Copyright (c) 2026 Zeronetsec -->
