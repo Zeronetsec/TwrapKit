@@ -33,6 +33,7 @@ include : '(
     .install/prepdir
     .install/zinstall
     .install/zparser
+    .install/chmod
     .install/extern/android_check
 )'
 
@@ -49,6 +50,7 @@ install::extern::androidCheck
 install::inpackages
 install::prepdir
 install::installer
+install::chmod
 install::checker
 
 trap - EXIT
