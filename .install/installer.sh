@@ -31,7 +31,7 @@ function install::installer() {
 
         install::getinstall \
             "command go build -o twrapkit" \
-            "Building: ${GG}twrapkit${N}"
+            "Compiling: ${GG}twrapkit${N}"
         cd
     )
 
