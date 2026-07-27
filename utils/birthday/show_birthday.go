@@ -11,7 +11,7 @@ import (
 func ShowBirthDay() {
     bdate := "05-15"
     now := time.Now().Format("01-02")
-    tname := "twrapkit"
+    tname := "TwrapKit"
 
     if now == bdate {
         fmt.Printf(
