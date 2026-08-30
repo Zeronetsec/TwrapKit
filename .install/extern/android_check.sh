@@ -37,10 +37,10 @@ function install::extern::androidCheck() {
         return 0
     }
 
-    echo -e "${B}[*] ${N}Checking android environment..."
+    echo -e "${color_B}[*] ${color_N}Checking android environment..."
     __android_check__ || {
-        echo -e "${R}[!] ${N}Termux environment not detected."
-        echo -e "${R}[!] ${N}This tool is designed exclusively for the Termux Android app."
+        echo -e "${color_R}[!] ${color_N}Termux environment not detected."
+        echo -e "${color_R}[!] ${color_N}This tool is designed exclusively for the Termux Android app."
         return 1
     }
 
@@ -50,8 +50,13 @@ function install::extern::androidCheck() {
             2>&1
     )"
 
-    if [[ "${termux_api}" != *"Error: Activity class"* ]] && [[ "${termux_api}" != *"does not exist"* ]]; then
-        echo -e "${R}[!] ${N}Termux:API not installed!"
+    if [[
+        "${termux_api}" != *"Error: Activity class"*
+    ]] && \
+    [[
+        "${termux_api}" != *"does not exist"*
+    ]]; then
+        echo -e "${color_R}[!] ${color_N}Termux:API not installed!"
         return 1
     fi
 }; readonly -f install::extern::androidCheck

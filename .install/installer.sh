@@ -2,12 +2,10 @@ function install::installer() {
     (
         cd "${opt}/${targetins}"
         install::getinstall \
-            "command go mod tidy" \
-            "Retidy: ${GG}${targetins}${N}"
-
-        install::getinstall \
-            "command go build -o ${targetins}" \
-            "Compiling: ${GG}${targetins}${N}"
-        cd
+            "
+                command go mod tidy
+                command go build -o ${targetins}
+            " \
+            "Compiling: ${color_GG}${targetins}${color_N}"
     )
 }; readonly -f install::installer
